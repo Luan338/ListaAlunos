@@ -1,0 +1,136 @@
+.card{
+    cursor: pointer;
+    height: 80px;
+    background-color: rgb(86, 86, 250);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .7rem;
+    padding: 1.1rem;
+    color: white;
+    position: relative;
+}
+
+h3{
+    font-size: 1.4rem;
+    color: white;
+    width: 200px;
+}
+
+p{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+}
+
+.exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    box-shadow: 0px 0px 10px 0px rgb(35, 35, 35);
+}
+
+.exit p{
+    color: black;
+    font-weight: bold;
+}
+
+/*MODAL*/
+.modal-open{
+    background: linear-gradient(to right, rgb(86, 86, 250) 250px, white 250px);
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgb(39, 39, 39);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s forwards;
+
+    display: flex;
+    align-items: center;
+}
+
+.modal-open::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 1);
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(50px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0, 0);
+    }
+  }
+
+.fechar-modal{
+    background-color: rgb(86, 86, 250);
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.contain-header{
+    align-items: initial;
+    flex-direction: column;
+    max-width: 310px;
+}
+
+.img-perfil{
+    width: 270px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.navigation{
+    /* box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.3); */
+    margin: 0 auto;
+    max-width: 500px;
+    width: 80%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.navigation ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation ul li{
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.1);
+}
