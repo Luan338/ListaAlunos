@@ -48,9 +48,10 @@ p{
 .modal-open{
     background: linear-gradient(to right, rgb(86, 86, 250) 250px, white 250px);
     position: absolute;
-    top: 100px;
+    bottom: -80px;
+    left: 0px;
     width: 100%;
-    height: 500px;
+    height: 480px;
     max-width: 1000px;
     z-index: 1;
     border-radius: 5px;
@@ -133,4 +134,37 @@ p{
     font-weight: bolder;
     font-size: 1.1rem;
     border-bottom: 1px solid rgba(132, 132, 132, 0.1);
+}
+
+/* MOBILE */
+@media(max-width: 940px){
+    .img-perfil{
+        width: 100%;
+    }
+}
+
+@media(max-width: 530px){
+    .img-perfil{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .contain-header{
+        max-width: 250px;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .navigation{
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 500px){
+    .modal-open{
+        width: 450px;
+    }
+    header {
+        width: 500px;
+        min-width: 100px;
+    }
 }

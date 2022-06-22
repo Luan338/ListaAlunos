@@ -3,6 +3,7 @@
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 5px;
+    padding: 2rem;
 }
 
 header{
@@ -26,6 +27,7 @@ form{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
 
 form input{
@@ -68,7 +70,8 @@ button{
 
 /* CARD */
 .card-principal{
-    margin-top: 2rem;
+    position: relative;
+    padding: 2rem;
 }
 
 
@@ -83,9 +86,9 @@ button{
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid rgb(9, 9, 58);
-    position: relative;
-    left: 980px;
-    top: -90px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
     box-shadow: 0px 0px 10px 0px rgb(35, 35, 35);
     transition: .3s all;
 }
@@ -97,4 +100,29 @@ button{
 
 .exit:hover{
     background-color: gainsboro;
+}
+
+/* MOBILE */
+@media(max-width: 620px){
+    header{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    
+    h4{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 478px){
+
+   header{
+    flex-direction: column-reverse;
+   }
+   .user{
+    margin-bottom: 2rem;
+   }
+
 }
